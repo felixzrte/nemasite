@@ -2,11 +2,13 @@
 import Footer from '../components/Footer.astro';
 import Layout from '../layouts/Layout.astro';
 import HeroSmall from '../components/HeroSmall.astro';
+import Accordion from '../components/Accordion.astro';
 ---
 
 <Layout title="Northen York County Emergency Manangement Agency">
   <main class="flex-grow">
-    <HeroSmall title="Resources" />
+    <HeroSmall title="Resources" image="../../public/resource.jpg"/>
+    <Accordion />
   </main>
   <Footer />
 </Layout> 

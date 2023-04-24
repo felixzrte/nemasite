@@ -1,4 +1,5 @@
 ---
+import Card from '../components/Card.astro';
 import Footer from '../components/Footer.astro';
 import HeroSmall from '../components/HeroSmall.astro';
 import Layout from '../layouts/Layout.astro';
@@ -7,20 +8,13 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Northen York County Emergency Manangement Agency">
   <main class="flex-grow">
     <HeroSmall title="Documents" />
-    <ul>
-      <li>
-        <a href="../../public/PAEmergencyPreparednessGuide-24 pg.pdf" target="_blank">PA Emergency Preparedness Guide</a>
-      </li>
-      <li>
-        <a href="../../public/Preparing Makes Sense Get Ready Now.pdf" target="_blank">Preparing Makes Sense Get Ready Now</a>
-      </li>
-      <li>
-        <a href="../../public/Preparing Makes Sense for Older Pennsylvanians 4pg folding.pdf" target="_blank">Preparing Makes Senes for Olders Pennsylvanians</a>
-      </li>
-      <li>
-        <a href="../../public/Preparing Makes Sense for People with Disabilities and Special Needs 4pg folding.pdf" target="_blank">Preparing Makes Sense for People with Disabilities and Special Needs</a>
-      </li>
-    </ul>
-    </main>
+    <div class="container mx-auto flex flex-wrap lg:py-24 py-12 justify-center">
+      <Card title="Helen's Plan" desc="PDF" link="../../public/Helen's Plan-leaving home due to short term emergencies.pdf"/>  
+      <Card title="PA Emergency Preparedness Guide" desc="PDF" link="../../public/PAEmergencyPreparednessGuide-24 pg.pdf"/>  
+      <Card title="Preparing Makes Sense Get Ready Now" desc="PDF" link="../../public/Preparing Makes Sense Get Ready Now.pdf"/>  
+      <Card title="Preparing Makes Sense for Older Pennsylvanians" desc="PDF" link="../../public/Preparing Makes Sense for Older Pennsylvanians 4pg folding.pdf"/>  
+      <Card title="Preparing Makes Sense for People with Disabilities and Special Needs" desc="PDF" link="../../public/Preparing Makes Sense for People with Disabilities and Special Needs 4pg folding.pdf"/>  
+    </div> 
+  </main>
   <Footer />
 </Layout>

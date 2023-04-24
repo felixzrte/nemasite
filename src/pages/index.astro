@@ -1,6 +1,5 @@
 ---
 import Content1 from '../components/Content1.astro';
-import Content2 from '../components/Content2.astro';
 import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
 import Steps from '../components/Steps.astro';
@@ -12,6 +11,52 @@ import Layout from '../layouts/Layout.astro';
     <Hero />
     <Content1 />
     <Steps />
+    <section>
+      <div class="px-6 py-24 md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-24">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+          <div
+            class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-first lg:h-full"
+          >
+            <img
+              alt="Party"
+              src="../../public/plan.png"
+              class="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
+          <div class="lg:py-24">
+            <h2 class="text-xs text-emerald-600 tracking-widest font-medium title-font mb-1">TESTIMONIAL</h2>
+            <h2 class="sm:text-3xl text-2xl font-bold title-font text-gray-900">
+              The Value of a Plan
+            </h2>
+            <p class="mt-4 text-gray-600">
+              I remember recently being with my in-laws who were both ill.  My mother-in-law had a heart condition while my father-in-law was confined to bed;  both required assistance.  Several days of rain followed by high winds left hundreds of local citizens without power as falling trees took down power lines throughout Northern York County.  The power company methodically restored power as they were able, but my in-laws went two days without power.  
+              Fortunately, they had planned ahead over the years and created “Plan A” – using a portable back-up generator to power the most important circuits in the house-  pump for well water, refrigeration for food, lighting for safety. 
+              With a well-stocked food pantry, they were able to shelter in place in spite of their medical needs.  Otherwise, we would have had to go to “Plan B”- evacuating them to their son’s home as long as he had power at his home.  
+              Preparing “Plan A” saved my in-laws from making a stressful and difficult evacuation from their home.  More importantly, the planning gave the entire family confidence that we were at the very least prepared for a potential power outage.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center py-24">
+        <h2 class="sm:text-3xl text-2xl font-bold title-font text-gray-900">
+          Our Leadership        
+        </h2>
+        <p class="mt-4 text-gray-600 text-2xl font-medium">Tim Hildebrand, Emergency Manangement Agency Coordinator</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">Herb Bomberger, Carroll Township</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">Melba Bomberger, Carroll Township</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">Kurt Eastep, Monaghan Township</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">Amy Erb, Warrington Township</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">Jeff Griffin, Dillsburg Borough</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">Larry Harbold, Franklin Township</p> 
+        <p class="mt-4 text-gray-600 text-2xl font-light">Darren Hercyk, Monaghan Township</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">Terri Hildebrand, Dillsburg Borough</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">Christian Ierley, Wellsville Borough</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">John Prato, Dillsburg Borough</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">Dave Schreffler, Monaghan Township</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">Dean Trump, Warrington Township</p>
+        <p class="mt-4 text-gray-600 text-2xl font-light">Felix Zarate, Network Administrator</p>
+      </div>
+    </section>
     <Footer />
   </main>
 </Layout>

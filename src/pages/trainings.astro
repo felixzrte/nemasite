@@ -1,4 +1,5 @@
 ---
+import EventCard from '../components/EventCard.astro';
 import Footer from '../components/Footer.astro';
 import HeroSmall from '../components/HeroSmall.astro';
 import Layout from '../layouts/Layout.astro';
@@ -7,6 +8,16 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Northen York County Emergency Manangement Agency">
   <main class="flex-grow">
     <HeroSmall title="Trainings and Events"/>
+    <div class="container mx-auto flex flex-wrap lg:py-24 py-12 justify-center">
+      <EventCard title="NEMA Board Meeting" subhead="MEETING" desc="Bi-monthly meeting" date="5/25" time="7:00 PM" location="Dillsburg Borough Office" link="" image="../../public/office.jpg"/>
+      <EventCard title="NEMA Board Meeting" subhead="MEETING" desc="Bi-monthly meeting" date="7/27" time="7:00 PM" location="Dillsburg Borough Office" link="" image="../../public/office.jpg"/>
+      <EventCard title="National Night Out" subhead="EVENT" desc="" date="8/1" time="5:00 PM - 8:00 PM" location="Logan Park, Dillsburg" link="https://natw.org/" image="../../public/nno.jpg"/> 
+      <EventCard title="CERT Training" subhead="TRAINING" desc="For more info email Larry Harbold: harboldlr@comcast.net" date="8/22 - 9/9 (Tuesday & Thursday)" time="" location="" link="" image="../../public/cert.jpg"/>
+      <EventCard title="NEMA Board Meeting" subhead="MEETING" desc="Bi-monthly meeting" date="9/28" time="7:00 PM" location="Dillsburg Borough Office" link="" image="../../public/office.jpg"/>
+      <EventCard title="Dillsburg Farmer's Fair" subhead="EVENT" desc="" date="10/16 - 10/21" time="" location="Dillsburg" link="https://www.dillsburgfarmersfair.org/" image="../../public/ff.jpeg"/> 
+      <EventCard title="NEMA Board Meeting" subhead="MEETING" desc="Bi-monthly meeting" date="11/16" time="7:00 PM" location="Dillsburg Borough Office" link="" image="../../public/office.jpg"/>
+      <EventCard title="Christkindlmarkt" subhead="EVENT" desc="" date="12/8 - 12/9" time="TBD" location="Dills Tarvern" link="https://northernyorkhistorical.org/" image="../../public/christ.jpg"/> 
+    </div>
   </main>
   <Footer />
 </Layout>
